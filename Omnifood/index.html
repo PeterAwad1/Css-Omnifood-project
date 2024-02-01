@@ -4,25 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The smart 365-days-per-year food subscription that will make you eat
+                        healthy
+                        again. Tailored to your personal tastes and
+                        nutritional needs.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="javascript" href="java-script/script.js">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <title>Omnifood</title>
+    <link rel="icon" href="img/favicon-64.png">
+    <title>Omnifood &mdash; Eating well </title>
 </head>
 
 <body>
     <header class="main-header">
         <img src="img/omnifood-logo.png" alt="Omnifood-logo" class="omnifood-logo">
         <nav class="main-nav">
+            <div><ion-icon name="menu-outline" class="menu-icon"></ion-icon></div>
             <ul class="nav-list">
-                <li><a href="#" class="nav-link">How it works</a></li>
-                <li><a href="#" class="nav-link">Meals</a></li>
-                <li><a href="#" class="nav-link">Testimonials</a></li>
-                <li><a href="#" class="nav-link">Pricing</a></li>
-                <li><a href=" #" class="nav-link last-link">Try for free</a></li>
+                <li><a href="#How-It-Work" class="nav-link">How it works</a></li>
+                <li><a href="#Meals" class="nav-link">Meals</a></li>
+                <li><a href="#Testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#Pricing" class="nav-link">Pricing</a></li>
+                <li><a href=" #cta" class="nav-link last-link">Try for free</a></li>
 
             </ul>
         </nav>
@@ -36,9 +44,10 @@
                         healthy
                         again. Tailored to your personal tastes and
                         nutritional needs.</p>
-
-                    <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-                    <a href="#" class="btn btn--outline">Learn more &darr;</a>
+                    <div>
+                        <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
+                        <a href="#How-It-Work" class="btn btn--outline">Learn more &darr;</a>
+                    </div>
                     <div class="delivered-box">
                         <div class="delivered-imgs">
                             <img src="img/customers/customer-1.jpg" alt="customer image" class="customer-image">
@@ -52,7 +61,12 @@
                     </div>
                 </div>
                 <div class="hero-img-section">
-                    <img src="img/hero.png" alt="Woman eating food, some meals" class="hero-img">
+                    <picture>
+                        <source srcset="img/hero-main.png" type="image/png">
+                        <source srcset="img/hero.webp" type="image/webp">
+                        <img src="img/hero.webp" alt="Woman eating food, some meals" class="hero-img">
+                    </picture>
+
                 </div>
             </div>
         </section>
@@ -69,14 +83,14 @@
             </div>
 
         </section>
-        <section class="how-section">
+        <section class="how-section" id="How-It-Work">
             <div class="container">
                 <span class="sunheading">How it works</span>
                 <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
             </div>
 
 
-            <div class="container grid grid--2-cols grid-align">
+            <div class="container grid grid--2-cols grid-align app-section">
                 <!-- step one -->
                 <div class="step-text-box">
                     <p class="step-number">01</p>
@@ -91,7 +105,7 @@
                         what diet you follow!
                     </p>
                 </div>
-                <div class="step-img-box">
+                <div class="step-img-box step-img-box2">
                     <img src="img/app/app-screen-1.png" alt="Mobile App screen" class="step-img">
                 </div>
 
@@ -130,7 +144,7 @@
             </div>
         </section>
 
-        <section class="meal-section">
+        <section class="meal-section" id="Meals">
             <div class="container center-align">
                 <span class="sunheading">Meals</span>
                 <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
@@ -249,7 +263,7 @@
                 <a href="#" class="recipe-link">See all recipes &rarr;</a>
             </div>
         </section>
-        <section class="section-testimonial-gallery">
+        <section class="section-testimonial-gallery" id="Testimonials">
             <div class="testimonial-box container grid grid--2-cols">
                 <div class="testimonials-section">
                     <div class="tital">
@@ -324,7 +338,7 @@
                 </div>
             </div>
         </section>
-        <section class="price-section">
+        <section class="price-section" id="Pricing">
             <div class="container">
                 <span class="sunheading">Price</span>
                 <h3 class="heading-tertiary">We have 2 pricing plans</h3>
@@ -419,7 +433,7 @@
                     days.</p>
             </div>
         </section>
-        <section>
+        <section id="cta">
             <div class="ctr container grid grid--2-cols">
                 <div class="information">
                     <h2 class="heading-secondary">Get your first meal for free!</h3>
@@ -450,10 +464,10 @@
                 </div>
             </div>
         </section>
-        <footer class="footer-section">
+        <footer class="footer-section" id="Learn-More">
             <div class="container grid grid--5-cols social">
                 <div class="social-content">
-                    <img src="img/omnifood-logo.png" alt="company-logo" class="omnifood-logos">
+                    <img src="img/omnifood-logo-resize.png" alt="company-logo">
                     <div class="social-logo">
                         <ion-icon name="logo-youtube" class="logo-youtube icon-logo"></ion-icon>
                         <ion-icon name="logo-facebook" class="logo-facebook icon-logo"></ion-icon>

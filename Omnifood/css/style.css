@@ -38,6 +38,7 @@ html {
   /* font-size: 10px; */
   /* 10 / 16 = 0.625 = 62.5 %*/
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -57,7 +58,8 @@ body {
 }
 .grid {
   display: grid;
-  gap: 9.6rem;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
 }
 .grid--2-cols {
   grid-template-columns: repeat(2, 1fr);
@@ -159,6 +161,12 @@ strong {
   gap: 3.2rem;
   color: #333;
   background-color: #fdf2e9;
+}
+.menu-icon {
+  font-size: 4.8rem;
+  background-color: none;
+  color: #333;
+  display: none;
 }
 .nav-link:link,
 .nav-link:visited {
@@ -331,7 +339,9 @@ strong {
 .meal-img {
   width: 100%;
 }
-
+.meals {
+  gap: 12.6rem;
+}
 .meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 1.1rem;
@@ -384,10 +394,9 @@ strong {
   color: #e67e22;
 }
 .meal-content {
-  padding: 0.9rem 4.2rem 4.2rem;
+  padding: 0.9rem 2.4rem 4.2rem;
 }
-.diets {
-}
+
 .list-diets {
   list-style: none;
   font-size: 1.8rem;
@@ -595,7 +604,7 @@ strong {
 .feature-price {
   margin: 0 auto;
   max-width: 120rem;
-  padding: 4.8rem 0 9.8rem 0;
+  padding: 4.8rem 3.2rem 9.8rem 3.2rem;
   grid-template-rows: auto 1fr auto;
   gap: 3rem;
 }
@@ -630,9 +639,7 @@ strong {
   overflow: hidden;
   gap: 4.8rem;
 }
-.img-input {
-  height: 30rem;
-}
+
 .information {
   padding: 4.8rem;
 }
@@ -721,7 +728,8 @@ strong {
   padding: 2.4rem;
 }
 .omnifood-logos {
-  height: 2.2rem;
+  height: 2.4rem;
+  width: 15rem;
 }
 .social-content p {
   font-size: 1.4rem;
